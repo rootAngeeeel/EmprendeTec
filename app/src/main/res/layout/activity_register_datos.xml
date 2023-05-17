@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".register_Datos">
+
+
+    <ImageView
+        android:id="@+id/imv_reg_Titulo"
+        android:layout_width="188dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reg_registro_datos" />
+
+    <EditText
+        android:id="@+id/edt_reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reg_sig"
+        app:layout_constraintStart_toStartOf="@+id/edt_reg_matricula"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_pass" />
+
+    <ImageView
+        android:id="@+id/imv_reg_nombre"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_reg_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_Titulo"
+        app:srcCompat="@drawable/reg_registro_nombre" />
+
+    <EditText
+        android:id="@+id/edt_reg_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_nombre" />
+
+    <EditText
+        android:id="@+id/edt_reg_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_userName" />
+
+    <ImageView
+        android:id="@+id/imv_reg_userName"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_reg_userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_nombre"
+        app:srcCompat="@drawable/reg_registro_nombreuser" />
+
+    <ImageView
+        android:id="@+id/imv_reg_telefono"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_reg_telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_userName"
+        app:srcCompat="@drawable/reg_registro_telefono" />
+
+    <EditText
+        android:id="@+id/edt_reg_telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_reg_userName"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_telefono" />
+
+    <ImageView
+        android:id="@+id/imv_reg_email"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_reg_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_telefono"
+        app:srcCompat="@drawable/reg_registro_email" />
+
+    <EditText
+        android:id="@+id/edt_reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_matricula"
+        app:layout_constraintStart_toStartOf="@+id/edt_reg_telefono"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_email" />
+
+    <ImageView
+        android:id="@+id/imv_reg_matricula"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_reg_matricula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_email"
+        app:srcCompat="@drawable/reg_registro_matricula" />
+
+    <EditText
+        android:id="@+id/edt_reg_matricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_pass"
+        app:layout_constraintStart_toStartOf="@+id/edt_reg_email"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_matricula" />
+
+    <ImageView
+        android:id="@+id/imv_reg_pass"
+        android:layout_width="157dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_reg_pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_matricula"
+        app:srcCompat="@drawable/reg_registro_pwd" />
+
+    <ImageView
+        android:id="@+id/btn_reg_sig"
+        android:layout_width="183dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reg_pass"
+        app:srcCompat="@drawable/btn_siguiente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
