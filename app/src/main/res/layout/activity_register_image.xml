@@ -8,65 +8,45 @@
     tools:context=".register_Image">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="115dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_setImage_perfil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/reg_register_image_perfil" />
+        android:id="@+id/imv_reg_img_perfil"
+        android:layout_width="367dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/reg_register_image_perfil"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="115dp" />
 
     <ImageView
         android:id="@+id/btn_setImage_perfil"
         android:layout_width="175dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="21dp"
+        android:layout_height="95dp"
         android:onClick="seleccionarImagenPerfil"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/reg_register_image_picker" />
+        app:srcCompat="@drawable/reg_register_image_picker"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="227dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_setImage_portada"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_setImage_perfil"
-        app:srcCompat="@drawable/reg_register_image_portada" />
+        android:id="@+id/imv_reg_img_portada"
+        android:layout_width="367dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/reg_register_image_portada"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="343dp" />
 
     <ImageView
         android:id="@+id/btn_setImage_portada"
         android:layout_width="175dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="30dp"
+        android:layout_height="95dp"
         android:onClick="seleccionarImagenPortada"
-        app:layout_constraintBottom_toTopOf="@+id/btn_reg_img_sig"
-        app:layout_constraintStart_toStartOf="@+id/btn_reg_img_sig"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/reg_register_image_picker" />
+        app:srcCompat="@drawable/reg_register_image_picker"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="466dp" />
 
     <ImageView
         android:id="@+id/btn_reg_img_sig"
         android:layout_width="187dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_setImage_portada"
-        app:srcCompat="@drawable/btn_siguiente" />
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/btn_siguiente"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="592dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

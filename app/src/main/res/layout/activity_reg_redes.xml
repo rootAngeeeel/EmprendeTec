@@ -9,116 +9,118 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imv_reg_redes_title"
         android:layout_width="248dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="41dp"
-        android:layout_marginBottom="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_redes_facebook"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/social_title" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imv_reg_redes_facebook"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="47dp"
         android:layout_marginEnd="29dp"
-        android:layout_marginBottom="39dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_redes_twitter"
+        app:layout_constraintEnd_toStartOf="@+id/edt_reg_redes_facebook"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_redes_title"
         app:srcCompat="@drawable/Facebook" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imv_reg_redes_twitter"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="44dp"
         android:layout_marginEnd="29dp"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_redes_linkedin"
+        app:layout_constraintEnd_toStartOf="@+id/edt_reg_redes_twitter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_redes_facebook"
         app:srcCompat="@drawable/twitter" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edt_reg_redes_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="71dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginBottom="5dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_reg_redes_facebook"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+        app:layout_constraintStart_toEndOf="@+id/imv_reg_redes_facebook" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edt_reg_redes_twitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="74dp"
+        android:layout_marginEnd="73dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+        app:layout_constraintStart_toEndOf="@+id/imv_reg_redes_twitter"
+        app:layout_constraintTop_toTopOf="@+id/imv_reg_redes_twitter" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/edt_reg_redes_linkedin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="74dp"
+        android:layout_marginEnd="73dp"
         android:layout_marginBottom="3dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_reg_redes_linkedin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6" />
+        app:layout_constraintStart_toEndOf="@+id/imv_reg_redes_linkedin" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imv_reg_redes_linkedin"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="47dp"
         android:layout_marginEnd="26dp"
         android:layout_marginBottom="29dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+        app:layout_constraintBottom_toTopOf="@+id/imv_reg_redes_subtitle"
+        app:layout_constraintEnd_toStartOf="@+id/edt_reg_redes_linkedin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_redes_twitter"
         app:srcCompat="@drawable/linkedin" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="365dp"
+        android:id="@+id/imv_reg_redes_subtitle"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
         android:layout_marginBottom="21dp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/rdg_reg_redes_Intereses"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_redes_linkedin"
         app:srcCompat="@drawable/social_subtitle2" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="298dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginEnd="58dp"
+        android:id="@+id/rdg_reg_redes_Intereses"
+        android:layout_width="294dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reg_redes_sig"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_redes_subtitle">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbtn_reg_redes_desarrollaProyecto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Desarrollar un proyecto"
@@ -126,7 +128,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbtn_reg_redes_participarProyecto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Participar en un proyecto"
@@ -134,7 +136,7 @@
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbtn_reg_redes_newSkills"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Aprender nuevas Skills"
@@ -143,14 +145,14 @@
     </RadioGroup>
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/btn_reg_redes_sig"
         android:layout_width="164dp"
         android:layout_height="0dp"
         android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/rdg_reg_redes_Intereses"
         app:srcCompat="@drawable/btn_siguiente" />
 
 

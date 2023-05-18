@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".register_areasInteres">
+
+    <ImageView
+        android:id="@+id/imv_reg_interes_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout_areas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reg_interes_title" />
+
+    <GridLayout
+        android:id="@+id/gridLayout_areas"
+        android:layout_width="420dp"
+        android:layout_height="331dp"
+        android:layout_marginBottom="106dp"
+        android:columnCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reg_interes_sig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_reg_interes_title">
+
+        <RadioGroup
+            android:id="@+id/rdg_reg_intereses1"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="102dp">
+
+            <RadioButton
+                android:id="@+id/rd_Diseño"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Diseño" />
+
+            <RadioButton
+                android:id="@+id/rd_Mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Marketing" />
+
+            <RadioButton
+                android:id="@+id/rd_Conta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Contabilidad" />
+
+            <RadioButton
+                android:id="@+id/rd_Inv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Investigacion" />
+
+            <RadioButton
+                android:id="@+id/rd_dProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Diseño de Productos" />
+
+            <RadioButton
+                android:id="@+id/rd_controlCalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Control de Calidad" />
+
+            <RadioButton
+                android:id="@+id/rd_Programacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Programacion" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rdg_reg_intereses2"
+            android:layout_width="195dp"
+            android:layout_height="330dp"
+            android:layout_column="1"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="102dp">
+
+            <RadioButton
+                android:id="@+id/rd_rPublicas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Relaciones Publicas" />
+
+            <RadioButton
+                android:id="@+id/rd_Electronica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Electronica" />
+
+            <RadioButton
+                android:id="@+id/rd_Robotica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Robotica" />
+
+            <RadioButton
+                android:id="@+id/rd_Mecanica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Mecanica" />
+
+            <RadioButton
+                android:id="@+id/rd_Inova"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Innovacion" />
+
+            <RadioButton
+                android:id="@+id/rd_Derecho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Derecho" />
+
+            <RadioButton
+                android:id="@+id/rd_Telec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Telecomunicaciones" />
+        </RadioGroup>
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/btn_reg_interes_sig"
+        android:layout_width="172dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout_areas"
+        app:srcCompat="@drawable/btn_siguiente" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
