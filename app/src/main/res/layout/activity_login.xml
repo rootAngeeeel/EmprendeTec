@@ -11,13 +11,16 @@
     <ImageView
         android:id="@+id/imv_title"
         android:layout_width="409dp"
-        android:layout_height="130dp"
+        android:layout_height="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/txv_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteY="140dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/edt_usuario"
@@ -25,12 +28,15 @@
         android:layout_height="49dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="213dp"
+        android:layout_marginBottom="213dp"
         android:background="@drawable/editText_Emprendetec"
         android:ems="10"
         android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="353dp" />
+        app:layout_constraintTop_toTopOf="@+id/imv_title" />
 
     <TextView
         android:id="@+id/txv_usuario"
@@ -38,11 +44,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="62dp"
         android:text="Usuario:"
         android:textSize="15sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="334dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txv_pass"
+        app:layout_constraintStart_toStartOf="@+id/edt_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/imv_title" />
 
     <EditText
         android:id="@+id/edt_pass"
@@ -50,12 +58,15 @@
         android:layout_height="49dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="33dp"
         android:background="@drawable/editText_Emprendetec"
         android:ems="10"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_usuario" />
 
     <TextView
         android:id="@+id/txv_pass"
@@ -63,20 +74,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="81dp"
         android:text="Contraseña:"
         android:textSize="15sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="416dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/edt_pass"
+        app:layout_constraintTop_toBottomOf="@+id/txv_usuario" />
 
     <ImageView
         android:id="@+id/btn_login"
         android:layout_width="208dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_new_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/btn_sign_in"
-        tools:layout_editor_absoluteY="517dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txv_pass"
+        app:srcCompat="@drawable/btn_sign_in" />
 
     <ImageView
         android:id="@+id/btn_new_user"
@@ -85,8 +100,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/btn_usuario_nuevo"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="651dp" />
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:srcCompat="@drawable/btn_usuario_nuevo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
