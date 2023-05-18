@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,10 +14,10 @@
         android:layout_height="130dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="133dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="177dp" />
+        tools:layout_editor_absoluteY="140dp" />
 
     <EditText
         android:id="@+id/edt_usuario"
@@ -25,25 +25,12 @@
         android:layout_height="49dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="285dp"
-        android:background="@drawable/edittext_emprendetec"
+        android:background="@drawable/editText_Emprendetec"
         android:ems="10"
         android:inputType="text"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="393dp" />
-
-    <EditText
-        android:id="@+id/edt_pass"
-        android:layout_width="295dp"
-        android:layout_height="49dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="148dp"
-        android:background="@drawable/edittext_emprendetec"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="496dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="353dp" />
 
     <TextView
         android:id="@+id/txv_usuario"
@@ -51,13 +38,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="59dp"
-        android:layout_marginBottom="334dp"
         android:text="Usuario:"
         android:textSize="15sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="374dp" />
+        tools:layout_editor_absoluteY="334dp" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="295dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/editText_Emprendetec"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="435dp" />
 
     <TextView
         android:id="@+id/txv_pass"
@@ -65,19 +63,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="514dp"
         android:text="Contraseña:"
         android:textSize="15sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteY="416dp" />
 
     <ImageView
         android:id="@+id/btn_login"
         android:layout_width="208dp"
         android:layout_height="0dp"
-        app:srcCompat="@drawable/btn_sign_in" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn_sign_in"
+        tools:layout_editor_absoluteY="517dp" />
 
     <ImageView
         android:id="@+id/btn_new_user"
@@ -86,10 +85,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="642dp"
         app:srcCompat="@drawable/btn_usuario_nuevo"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="582dp" />
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="651dp" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
