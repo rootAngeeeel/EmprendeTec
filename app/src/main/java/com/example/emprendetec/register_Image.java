@@ -33,6 +33,8 @@ public class register_Image extends AppCompatActivity {
 
         sig.setOnClickListener(view -> {
             animation(sig);
+            Intent i = new Intent(getApplicationContext(), reg_Redes.class);
+            startActivity(i);
         });
     }
 
